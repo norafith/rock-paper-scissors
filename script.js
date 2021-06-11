@@ -53,7 +53,7 @@ function playOneRound(playerDecision) {
     } else {
         winCounter += 1;
         playerScore.textContent = winCounter;
-        if (lang == 'RUS') message.textContent = `Вы выйграли раунд! ${capitalize(convertLang(playerDecision))} побеждает ${capitalize(convertLang(compDecision))}!`
+        if (lang == 'RUS') message.textContent = `Вы выиграли раунд! ${capitalize(convertLang(playerDecision))} побеждает ${capitalize(convertLang(compDecision))}!`
         else message.textContent = `You won a round! ${capitalize(playerDecision)} beats ${capitalize(compDecision)}!`
     }
     roundCounter--; 
@@ -128,7 +128,7 @@ function gameEnd() {
         if (lang == 'RUS') message.textContent = 'Вы проиграли!';
         else message.textContent = 'You lost!'
     } else if (winCounter > loseCounter) {
-        if (lang == 'RUS') message.textContent = 'Вы выйграли!';
+        if (lang == 'RUS') message.textContent = 'Вы выиграли!';
         else message.textContent = 'You won!'
     } else {
         if (lang == 'RUS') message.textContent = 'В игре ничья!';
